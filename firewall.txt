@@ -1,0 +1,187 @@
+###########################################################################################################################
+#                      FIREWALL MAQUINA WINDOWS IP 192.168.15.100 PARA VM MAQUINA LINUX IP 192.168.15.150 server          #
+#                                                   by carlos coelho                                                      #
+###########################################################################################################################
+
+netsh interface portproxy reset
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=21 connectaddress=192.168.15.150 connectport=21
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=21 connectaddress=192.168.15.150 connectport=21
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=21 connectaddress=192.168.15.150 connectport=21
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=21 connectaddress=192.168.15.150 connectport=21
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=22 connectaddress=192.168.15.150 connectport=22
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=22 connectaddress=192.168.15.150 connectport=22
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=22 connectaddress=192.168.15.150 connectport=22
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=22 connectaddress=192.168.15.150 connectport=22
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=1337 connectaddress=192.168.15.150 connectport=1337
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=1337 connectaddress=192.168.15.150 connectport=1337
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=1337 connectaddress=192.168.15.150 connectport=1337
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=1337 connectaddress=192.168.15.150 connectport=1337
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=25 connectaddress=192.168.15.150 connectport=25
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=25 connectaddress=192.168.15.150 connectport=25
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=25 connectaddress=192.168.15.150 connectport=25
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=25 connectaddress=192.168.15.150 connectport=25
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=53 connectaddress=192.168.15.150 connectport=53
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=53 connectaddress=192.168.15.150 connectport=53
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=53 connectaddress=192.168.15.150 connectport=53
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=53 connectaddress=192.168.15.150 connectport=53
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=80 connectaddress=192.168.15.150 connectport=80
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=80 connectaddress=192.168.15.150 connectport=80
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=80 connectaddress=192.168.15.150 connectport=80
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=80 connectaddress=192.168.15.150 connectport=80
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=81 connectaddress=192.168.15.150 connectport=81
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=81 connectaddress=192.168.15.150 connectport=81
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=81 connectaddress=192.168.15.150 connectport=81
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=81 connectaddress=192.168.15.150 connectport=81
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=110 connectaddress=192.168.15.150 connectport=110
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=110 connectaddress=192.168.15.150 connectport=110
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=110 connectaddress=192.168.15.150 connectport=110
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=110 connectaddress=192.168.15.150 connectport=110
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=143 connectaddress=192.168.15.150 connectport=143
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=143 connectaddress=192.168.15.150 connectport=143
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=143 connectaddress=192.168.15.150 connectport=143
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=143 connectaddress=192.168.15.150 connectport=143
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=443 connectaddress=192.168.15.150 connectport=443
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=443 connectaddress=192.168.15.150 connectport=443
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=443 connectaddress=192.168.15.150 connectport=443
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=443 connectaddress=192.168.15.150 connectport=443
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=465 connectaddress=192.168.15.150 connectport=465
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=465 connectaddress=192.168.15.150 connectport=465
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=465 connectaddress=192.168.15.150 connectport=465
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=465 connectaddress=192.168.15.150 connectport=465
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=587 connectaddress=192.168.15.150 connectport=587
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=587 connectaddress=192.168.15.150 connectport=587
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=587 connectaddress=192.168.15.150 connectport=587
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=587 connectaddress=192.168.15.150 connectport=587
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=993 connectaddress=192.168.15.150 connectport=993
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=993 connectaddress=192.168.15.150 connectport=993
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=993 connectaddress=192.168.15.150 connectport=993
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=993 connectaddress=192.168.15.150 connectport=993
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=995 connectaddress=192.168.15.150 connectport=995
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=995 connectaddress=192.168.15.150 connectport=995
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=995 connectaddress=192.168.15.150 connectport=995
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=995 connectaddress=192.168.15.150 connectport=995
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=1935 connectaddress=192.168.15.150 connectport=1935
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=1935 connectaddress=192.168.15.150 connectport=1935
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=1935 connectaddress=192.168.15.150 connectport=1935
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=1935 connectaddress=192.168.15.150 connectport=1935
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=3333 connectaddress=192.168.15.150 connectport=3333
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=3333 connectaddress=192.168.15.150 connectport=3333
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=3333 connectaddress=192.168.15.150 connectport=3333
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=3333 connectaddress=192.168.15.150 connectport=3333
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=3306 connectaddress=192.168.15.150 connectport=3306
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=3306 connectaddress=192.168.15.150 connectport=3306
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=3306 connectaddress=192.168.15.150 connectport=3306
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=3306 connectaddress=192.168.15.150 connectport=3306
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=5222 connectaddress=192.168.15.150 connectport=5222
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=5222 connectaddress=192.168.15.150 connectport=5222
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=5222 connectaddress=192.168.15.150 connectport=5222
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=5222 connectaddress=192.168.15.150 connectport=5222
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=8080 connectaddress=192.168.15.150 connectport=8080
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=8080 connectaddress=192.168.15.150 connectport=8080
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=8080 connectaddress=192.168.15.150 connectport=8080
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=8080 connectaddress=192.168.15.150 connectport=8080
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=8081 connectaddress=192.168.15.150 connectport=8081
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=8081 connectaddress=192.168.15.150 connectport=8081
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=8081 connectaddress=192.168.15.150 connectport=8081
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=8081 connectaddress=192.168.15.150 connectport=8081
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=9000 connectaddress=192.168.15.150 connectport=9000
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=9000 connectaddress=192.168.15.150 connectport=9000
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=9000 connectaddress=192.168.15.150 connectport=9000
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=9000 connectaddress=192.168.15.150 connectport=9000
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=10000 connectaddress=192.168.15.150 connectport=10000
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=10000 connectaddress=192.168.15.150 connectport=10000
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=10000 connectaddress=192.168.15.150 connectport=10000
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=10000 connectaddress=192.168.15.150 connectport=10000
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=11000 connectaddress=192.168.15.150 connectport=11000
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=11000 connectaddress=192.168.15.150 connectport=11000
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=11000 connectaddress=192.168.15.150 connectport=11000
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=11000 connectaddress=192.168.15.150 connectport=11000
+
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=34567 connectaddress=192.168.15.55 connectport=34567
+netsh interface portproxy add v4tov4 listenaddress=192.168.15.100 listenport=34599 connectaddress=192.168.15.55 connectport=34599
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=34567 connectaddress=192.168.15.55 connectport=34567
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=34599 connectaddress=192.168.15.55 connectport=34599
+
+netsh int ipv4 set dynamicport tcp start=40110 num=1000
+netsh int ipv4 set dynamicport tcp start=10000 num=1000
+netsh interface portproxy add v4tov4 listenport=40110-40210 listenaddress=192.168.15.100 connectport=40110-40210 connectaddress=192.168.15.150
+netsh interface portproxy add v4tov4 listenport=10000-100005 listenaddress=192.168.15.100 connectport=10000-100005 connectaddress=192.168.15.150
+
+netsh advfirewall firewall add rule name="CC-STUDIO FTP DATA 20" dir=in action=allow protocol=TCP localport=20
+netsh advfirewall firewall add rule name="CC-STUDIO FTP DATA 20" dir=out action=allow protocol=TCP localport=20
+netsh advfirewall firewall add rule name="CC-STUDIO FTP COMMAND 21" dir=in action=allow protocol=TCP localport=21
+netsh advfirewall firewall add rule name="CC-STUDIO FTP COMMAND 21" dir=out action=allow protocol=TCP localport=21
+netsh advfirewall firewall add rule name="CC-STUDIO SSH 22" dir=out action=allow protocol=TCP localport=22
+netsh advfirewall firewall add rule name="CC-STUDIO SSH 22" dir=in  action=allow protocol=TCP localport=22
+netsh advfirewall firewall add rule name="CC-STUDIO EMAIL 25" dir=in action=allow protocol=TCP localport=25
+netsh advfirewall firewall add rule name="CC-STUDIO EMAIL 25" dir=out action=allow protocol=TCP localport=25
+netsh advfirewall firewall add rule name="CC-STUDIO DNS 53" dir=in action=allow protocol=TCP localport=53
+netsh advfirewall firewall add rule name="CC-STUDIO DNS 53" dir=out action=allow protocol=TCP localport=53
+netsh advfirewall firewall add rule name="CC-STUDIO HTTP 80" dir=in action=allow protocol=TCP localport=80
+netsh advfirewall firewall add rule name="CC-STUDIO HTTP 80" dir=out action=allow protocol=TCP localport=80
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMEDIA HLS 81" dir=in action=allow protocol=TCP localport=81
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMEDIA HLS 81" dir=out action=allow protocol=TCP localport=81
+netsh advfirewall firewall add rule name="CC-STUDIO POP3 110" dir=in action=allow protocol=TCP localport=110
+netsh advfirewall firewall add rule name="CC-STUDIO POP3 110" dir=out action=allow protocol=TCP localport=110
+netsh advfirewall firewall add rule name="CC-STUDIO IMAP 143" dir=in action=allow protocol=TCP localport=143
+netsh advfirewall firewall add rule name="CC-STUDIO IMAP 143" dir=out action=allow protocol=TCP localport=143
+netsh advfirewall firewall add rule name="CC-STUDIO HTTPS 443" dir=in action=allow protocol=TCP localport=443
+netsh advfirewall firewall add rule name="CC-STUDIO HTTPS 443" dir=out action=allow protocol=TCP localport=443
+netsh advfirewall firewall add rule name="CC-STUDIO SMTPS 465" dir=in action=allow protocol=TCP localport=465
+netsh advfirewall firewall add rule name="CC-STUDIO SMTPS 465" dir=out action=allow protocol=TCP localport=465
+netsh advfirewall firewall add rule name="CC-STUDIO SMTP 587" dir=in action=allow protocol=TCP localport=587
+netsh advfirewall firewall add rule name="CC-STUDIO SMTP 587" dir=out action=allow protocol=TCP localport=587
+netsh advfirewall firewall add rule name="CC-STUDIO IMAPS 993" dir=in action=allow protocol=TCP localport=993
+netsh advfirewall firewall add rule name="CC-STUDIO IMAPS 993" dir=out action=allow protocol=TCP localport=993
+netsh advfirewall firewall add rule name="CC-STUDIO POP3S 995" dir=in action=allow protocol=TCP localport=995
+netsh advfirewall firewall add rule name="CC-STUDIO POP3S 995" dir=out action=allow protocol=TCP localport=995
+netsh advfirewall firewall add rule name="CC-STUDIO SSH 1337" dir=out action=allow protocol=TCP localport=1337
+netsh advfirewall firewall add rule name="CC-STUDIO SSH 1337" dir=in  action=allow protocol=TCP localport=1337
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMEDIA RTMPProvider 1935" dir=out action=allow protocol=TCP localport=1935
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMEDIA RTMPProvider 1935" dir=in  action=allow protocol=TCP localport=1935
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMEDIA Signalling 3333" dir=in action=allow protocol=TCP localport=3333
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMEDIA Signalling 3333" dir=out action=allow protocol=TCP localport=3333
+netsh advfirewall firewall add rule name="CC-STUDIO MYSQL 3306" dir=in action=allow protocol=TCP localport=3306
+netsh advfirewall firewall add rule name="CC-STUDIO MYSQL 3306" dir=out action=allow protocol=TCP localport=3306
+netsh advfirewall firewall add rule name="CC-STUDIO ISPCONFIG 8080" dir=in action=allow protocol=TCP localport=8080
+netsh advfirewall firewall add rule name="CC-STUDIO ISPCONFIG 8080" dir=out action=allow protocol=TCP localport=8080
+netsh advfirewall firewall add rule name="CC-STUDIO ISPCONFIG 8081" dir=in action=allow protocol=TCP localport=8081
+netsh advfirewall firewall add rule name="CC-STUDIO ISPCONFIG 8081" dir=out action=allow protocol=TCP localport=8081
+
+netsh advfirewall firewall add rule name="CC-STUDIO ISPCONFIG 10000" dir=in action=allow protocol=TCP localport=10000 
+netsh advfirewall firewall add rule name="CC-STUDIO ISPCONFIG 10000" dir=out action=allow protocol=TCP localport=10000 
+netsh advfirewall firewall add rule name="CC-STUDIO WEBMIN 11000" dir=in action=allow protocol=TCP localport=11000 
+netsh advfirewall firewall add rule name="CC-STUDIO WEBMIN 11000" dir=out action=allow protocol=TCP localport=11000 
+
+netsh advfirewall firewall add rule name="CC-STUDIO DNS 53 UDP" dir=in action=allow protocol=UDP localport=53 
+netsh advfirewall firewall add rule name="CC-STUDIO DNS 53 UDP" dir=out action=allow protocol=UDP localport=53 
+netsh advfirewall firewall add rule name="CC-STUDIO MYSQL 3306" dir=in action=allow protocol=UDP localport=3306 
+netsh advfirewall firewall add rule name="CC-STUDIO MYSQL 3306" dir=out action=allow protocol=UDP localport=3306
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMMEDIA Origin 9000" dir=in action=allow protocol=UDP localport=9000
+netsh advfirewall firewall add rule name="CC-STUDIO OVENMMEDIA Origin 9000" dir=out action=allow protocol=UDP localport=9000
+
+netsh interface portproxy show all
+
